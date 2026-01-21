@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quinjoa Rey Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* GENERAL STYLES */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5; /* light gray background */
+    color:#333;
+    scroll-behavior: smooth;
+  }
+
+  a { color:#333; text-decoration:none; }
+  .container { width:90%; max-width:1000px; margin:0 auto; text-align:center; }
+
+  section {
+    padding:80px 20px;
+    opacity:1; /* visible by default */
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+
+  section.animate {
+    transform: translateY(0);
+  }
+
+  h1,h2,h3 { margin:10px 0; }
+  h1 { font-size:2em; color:#333; }
+  h2 { font-size:1.8em; color:#555; }
+  h3 { font-size:1.2em; color:#666; }
+
+  p { margin:5px 0; line-height:1.5em; }
+
+  /* HOME SECTION */
+  .home {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+  }
+
+  .home img {
+    width:250px;
+    border-radius:50%;
+    flex-shrink:0;
+  }
+
+  .home-info {
+    text-align:left;
+    max-width:500px;
+  }
+
+  .home-info p { margin:5px 0; font-weight:500; }
+
+  /* EXPERIENCE */
+  .experience .job {
+    background:#fff;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    max-width:700px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  /* FIGMA LINKS */
+  .figma-links {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+  }
+
+  .figma-links a {
+    display:block;
+    padding:10px 15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background:#fff;
+    transition:0.3s;
+  }
+
+  .figma-links a:hover { background:#e0e0e0; }
+
+  .figma-links img {
+    margin-top:5px;
+    width:200px;
+    border-radius:5px;
+    border:1px solid #ccc;
+  }
+
+  /* CONTACT FORM */
+  .contact form {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:500px;
+    margin:0 auto;
+  }
+
+  input, textarea {
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:1em;
+  }
+
+  button {
+    padding:10px 20px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:1em;
+    transition:0.3s;
+  }
+
+  button:hover { background:#555; }
+
+  /* FOOTER */
+  footer {
+    text-align:center;
+    padding:20px 0;
+    background:#e0e0e0;
+    margin-top:50px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HOME -->
+  <section class="home">
+    <img src="headshot - photo.jpg" alt="Quinjoa Rey">
+    <div class="home-info">
+      <h1>Customer Support / Creative Virtual Assistant</h1>
+      <p><strong>Name:</strong> Quinjoa Rey</p>
+      <p><strong>Email:</strong> quinjoarey@gmail.com</p>
+      <p><strong>Contact:</strong> 09633375807</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <h3>Healthcare Account (Aug 2023 – Mar 11 2024)</h3>
+      <p>Used CRM to assist customers with medical concerns. Processed claims, enrollment, plan changes, medication queries, and more.</p>
+    </div>
+
+    <div class="job">
+      <h3>Financial Account (Apr 2024 – Aug 2025)</h3>
+      <p>Handled banking & financial concerns via CRM. Managed apps, processed requests, and made outbound calls for eligible credit card applicants.</p>
+    </div>
+
+    <div class="job">
+      <h3>Advertising (3 months)</h3>
+      <p>Managed TikTok ads via TikTok Manager. Generated 12 leads daily, called clients, advised on video accuracy per TikTok Ads Policy, and researched successful campaigns.</p>
+    </div>
+
+    <div class="job">
+      <h3>Figma / Creative Projects</h3>
+      <p>Assisted in website & app creation using Figma. Designed layouts, wireframes, and shared creative ideas for improved UX/UI.</p>
+      <div class="figma-links">
+        <a href="https://www.figma.com/design/DpPgdcHwPTt790z2cq5CT9/Untitled?m=auto&t=OOdMwoAQUwMZAlCo-6" target="_blank">
+          <img src="thumbnail1.png" alt="Figma Project 1 Thumbnail">
+        </a>
+        <a href="https://www.figma.com/design/rAiCmDFAOq20EveKdshugS/Coffee-shop-ni-emelbe?m=auto&t=OOdMwoAQUwMZAlCo-6" target="_blank">
+          <img src="thumbnail2.png" alt="Figma Project 2 Thumbnail">
+        </a>
+        <a href="https://www.figma.com/design/Gs1sppb5d2331xtiN0gJx3/Mobile-Dev?m=auto&t=OOdMwoAQUwMZAlCo-6" target="_blank">
+          <img src="thumbnail3.png" alt="Figma Project 3 Thumbnail">
+        </a>
+        <a href="https://www.figma.com/design/rIRvBZcmrSUbtnSMirm03D/Gloss---Glam-Nails-UI--DRAFT-?m=auto&t=OOdMwoAQUwMZAlCo-6" target="_blank">
+          <img src="thumbnail4.png" alt="Figma Project 4 Thumbnail">
+        </a>
+      </div>
+    </div>
+  </section>
+
+ 
+
+</div>
+
+<footer>
+  Quinjoa Rey
+</footer>
+
+<!-- EMAILJS -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("cTA-CaGdnl_01zLsly6pk"); 
+   })();
+</script>
+
+<script>
+  // Scroll Animation
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+
+  // EmailJS Contact Form
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ydwd9xm', 'template_1nfusqn', this) 
+      .then(() => {
+        alert('Message sent successfully!');
+        form.reset();
+      }, (err) => {
+        console.error('FAILED...', err);
+        alert('Oops! Something went wrong. Please try again.');
+      });
+  });
+</script>
+
+</body>
+</html>
